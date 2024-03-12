@@ -1,4 +1,4 @@
-.headline {
+.flexcontainers__headline, .headline {
   font-family: Arial;
   font-size: 30px;
   line-height: 36px;
@@ -97,10 +97,81 @@
 
 .flexcontainers {
   background-color: #f5f5f5;
-  width: 1166;
+  height: 485px;
+}
+
+.flexcontainers__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexcontainers__headline {
+  margin: 0px auto;
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexcontainers__content__left-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-part {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-part__image {
+  margin-left: 8px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.content-part__article {
+  max-width: 360px;
+  margin-right: 8px;
+}
+
+.content-part__article__localheadline {
+  font-family: Arial;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #445161;
+}
+
+.flexcontainers__content__right-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.vAlign__column {
+  display: flex;
+  flex-direction: column;
+  background-color: #445162;
+  width: 300px;
+  height: 500px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.vAlign__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .vAlign__column__beGlad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   font-family: Arial;
   font-size: 24px;
   line-height: 30px;
@@ -110,6 +181,12 @@
 }
 
 .vAlign__column__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 300px;
+  height: 71px;
   font-family: Arial;
   font-size: 40px;
   line-height: 30px;
@@ -123,6 +200,22 @@
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.vAlign__articleAndButton {
+  height: 377px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
 }
 
 .sign {
